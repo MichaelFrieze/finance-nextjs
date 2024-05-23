@@ -3,8 +3,8 @@ import { UserButton } from "@clerk/nextjs";
 export default function Home() {
   return (
     <div>
-      <p>This is an authenticated route</p>
-      <UserButton afterSignOutUrl="/" />
+      <p>Header Component</p>
+      {/* <UserButton afterSignOutUrl="/" /> */}
     </div>
   );
 }
