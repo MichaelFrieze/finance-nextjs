@@ -8,6 +8,13 @@
       "when": 1717714179078,
       "tag": "0000_overrated_ma_gnuci",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1717787593761,
+      "tag": "0001_shallow_rockslide",
+      "breakpoints": true
     }
   ]
 }
