@@ -1,10 +1,9 @@
-import { UserButton } from "@clerk/nextjs";
+"use client";
 
 export default function Home() {
   return (
     <div>
-      <p>Header Component</p>
-      {/* <UserButton afterSignOutUrl="/" /> */}
+      <p>Home Page</p>
     </div>
   );
 }
