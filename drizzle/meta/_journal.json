@@ -15,6 +15,13 @@
       "when": 1717787593761,
       "tag": "0001_shallow_rockslide",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1718638761422,
+      "tag": "0002_tiresome_taskmaster",
+      "breakpoints": true
     }
   ]
 }

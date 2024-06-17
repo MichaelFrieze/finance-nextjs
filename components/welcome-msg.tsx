@@ -2,7 +2,7 @@
 
 import { useUser } from "@clerk/nextjs";
 
-export const WelcomeMsg = () => {
+const WelcomeMsg = () => {
   const { user, isLoaded } = useUser();
 
   return (
@@ -17,3 +17,5 @@ export const WelcomeMsg = () => {
     </div>
   );
 };
+
+export default WelcomeMsg;
