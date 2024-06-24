@@ -1,0 +1,34 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1717714179078,
+      "tag": "0000_overrated_ma_gnuci",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1717787593761,
+      "tag": "0001_shallow_rockslide",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1718638761422,
+      "tag": "0002_tiresome_taskmaster",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1718741789185,
+      "tag": "0003_large_stepford_cuckoos",
+      "breakpoints": true
+    }
+  ]
+}

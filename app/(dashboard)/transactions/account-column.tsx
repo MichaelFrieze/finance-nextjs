@@ -14,8 +14,8 @@ export const AccountColumn = ({ account, accountId }: Props) => {
 
   return (
     <div
-      className="flex cursor-pointer items-center hover:underline"
       onClick={onClick}
+      className="flex cursor-pointer items-center hover:underline"
     >
       {account}
     </div>

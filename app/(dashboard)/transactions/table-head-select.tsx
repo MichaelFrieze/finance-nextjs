@@ -10,7 +10,7 @@ import {
 type Props = {
   columnIndex: number;
   selectedColumns: Record<string, string | null>;
-  onChange: (columns: number, value: string | null) => void;
+  onChange: (columnIndex: number, value: string | null) => void;
 };
 
 const options = ["amount", "payee", "date"];
@@ -20,16 +20,17 @@ export const TableHeadSelect = ({
   selectedColumns,
   onChange,
 }: Props) => {
-  const currentSelect = selectedColumns[`column_${columnIndex}`];
+  const currentSelection = selectedColumns[`column_${columnIndex}`];
+
   return (
     <Select
-      value={currentSelect || ""}
+      value={currentSelection || ""}
       onValueChange={(value) => onChange(columnIndex, value)}
     >
       <SelectTrigger
         className={cn(
           "border-none bg-transparent capitalize outline-none focus:ring-transparent focus:ring-offset-0",
-          currentSelect && "text-blue-500",
+          currentSelection && "text-blue-500",
         )}
       >
         <SelectValue placeholder="Skip" />
