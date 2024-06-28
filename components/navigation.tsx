@@ -26,10 +26,10 @@ const routes = [
     href: "/categories",
     label: "Categories",
   },
-  {
-    href: "/setting",
-    label: "Settings",
-  },
+  // {
+  //   href: "/setting",
+  //   label: "Settings",
+  // },
 ];
 
 const Navigation = () => {
