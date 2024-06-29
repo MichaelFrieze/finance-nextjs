@@ -9,8 +9,11 @@
     "lint": "next lint",
     "format": "prettier --check --ignore-path .gitignore .",
     "format:fix": "prettier --write --ignore-path .gitignore .",
+    "db:clear": "bun ./scripts/clear.ts",
+    "db:drop": "drizzle-kit drop",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
     "db:seed": "bun ./scripts/seed.ts",
     "db:studio": "drizzle-kit studio"
   },
