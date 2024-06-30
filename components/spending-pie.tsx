@@ -41,7 +41,7 @@ export const SpendingPie = ({ data = [] }: Props) => {
                 <p className="line-clamp-1">Pie Chart</p>
               </div>
             </SelectItem>
-            <SelectItem value="radar">
+            {/* <SelectItem value="radar">
               <div className="flex items-center">
                 <Radar className="mr-2 size-4 shrink-0" />
                 <p className="line-clamp-1">Radar Chart</p>
@@ -52,7 +52,7 @@ export const SpendingPie = ({ data = [] }: Props) => {
                 <Target className="mr-2 size-4 shrink-0" />
                 <p className="line-clamp-1">Radial Chart</p>
               </div>
-            </SelectItem>
+            </SelectItem> */}
           </SelectContent>
         </Select>
       </CardHeader>
@@ -67,8 +67,8 @@ export const SpendingPie = ({ data = [] }: Props) => {
         ) : (
           <>
             {chartType === "pie" && <PieVariant data={data} />}
-            {chartType === "radar" && <PieVariant data={data} />}
-            {chartType === "radial" && <PieVariant data={data} />}
+            {/* {chartType === "radar" && <PieVariant data={data} />}
+            {chartType === "radial" && <PieVariant data={data} />} */}
           </>
         )}
       </CardContent>
