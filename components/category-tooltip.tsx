@@ -7,8 +7,6 @@ export const CategoryTooltip = ({ active, payload }: any) => {
   const name = payload[0].payload.name;
   const value = payload[0].value;
 
-  console.log(value);
-
   return (
     <div className="overflow-hidden rounded-sm border bg-white shadow-sm">
       <div className="bg-muted p-2 px-3 text-sm text-muted-foreground">
