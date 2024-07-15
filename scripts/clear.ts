@@ -1,12 +1,12 @@
 import { config } from "dotenv";
-import { drizzle } from "drizzle-orm/neon-http";
-import { neon } from "@neondatabase/serverless";
+import { drizzle } from "drizzle-orm/neon-serverless";
+import { Pool } from "@neondatabase/serverless";
 import { categories, accounts, transactions } from "@/db/schema";
 
 config({ path: ".env.local" });
 
-const sql = neon(process.env.DATABASE_URL!);
-const db = drizzle(sql);
+const pool = new Pool({ connectionString: process.env.DATABASE_URL! });
+const db = drizzle(pool);
 
 console.log("🗑️ Clearing all tables");
 
