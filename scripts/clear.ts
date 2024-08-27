@@ -1,6 +1,6 @@
 import { config } from "dotenv";
-import { drizzle } from "drizzle-orm/neon-serverless";
-import { Pool } from "@neondatabase/serverless";
+import { drizzle } from "drizzle-orm/node-postgres";
+import { Pool } from "pg";
 import { categories, accounts, transactions } from "@/db/schema";
 
 config({ path: ".env.local" });

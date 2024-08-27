@@ -1,7 +1,7 @@
 import { config } from "dotenv";
 import { subDays } from "date-fns";
-import { drizzle } from "drizzle-orm/neon-serverless";
-import { Pool } from "@neondatabase/serverless";
+import { drizzle } from "drizzle-orm/node-postgres";
+import { Pool } from "pg";
 import { categories, accounts, transactions } from "@/db/schema";
 
 config({ path: ".env.local" });
@@ -10,7 +10,7 @@ const pool = new Pool({ connectionString: process.env.DATABASE_URL! });
 const db = drizzle(pool);
 
 // Get user ID from Clerk
-const SEED_USER_ID = "user_2jFdL70FJ8RTr7q0gdJVvnCtgdZ";
+const SEED_USER_ID = "user_2lFCanqAX4teAICBB5bGzS8srGk";
 const SEED_CATEGORIES = [
   { id: "category_1", name: "Food", userId: SEED_USER_ID, plaidId: null },
   { id: "category_2", name: "Rent", userId: SEED_USER_ID, plaidId: null },
