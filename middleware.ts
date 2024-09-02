@@ -8,10 +8,6 @@ export default clerkMiddleware((auth, request) => {
     auth().protect();
   }
 
-  if (!auth().userId && isProtectedRoute(request)) {
-    return auth().redirectToSignIn();
-  }
-
   return NextResponse.next();
 });
 
